@@ -1,0 +1,20 @@
+.selector-content-wrapper {
+  width: 85%;
+  height: 100%;
+  border: solid white 1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.selector-content-wrapper p {
+  color: white;
+  font-size: 45px;
+}
+.selector-content-wrapper button {
+  height: 40px;
+  width: 300px;
+  border-radius: 10px;
+  color: hotpink;
+  background-color: green;
+}/*# sourceMappingURL=selector-content.css.map */

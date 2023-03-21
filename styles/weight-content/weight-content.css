@@ -1,0 +1,20 @@
+.weight-wrapper {
+  width: 15%;
+}
+.weight-wrapper .top-weight-wrapper {
+  width: 100%;
+  height: 10%;
+  border: solid hotpink 3px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+.weight-wrapper .top-weight-wrapper p {
+  color: hotpink;
+}
+.weight-wrapper .bottom-weight-wrapper {
+  width: 100%;
+  height: 90%;
+  background-color: green;
+  border: solid hotpink 3px;
+}/*# sourceMappingURL=weight-content.css.map */

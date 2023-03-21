@@ -1,0 +1,16 @@
+@import "../selector-content/selector-content.css";
+@import "../weight-content/weight-content.css";
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: slategray;
+}
+
+.page-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}/*# sourceMappingURL=main.css.map */
