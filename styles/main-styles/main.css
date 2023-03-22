@@ -1,7 +1,5 @@
-@import "../selector-content/selector-content.css";
-@import "../weight-content/weight-content.css";
-
-
+@import "/styles/weight-content/weight-content.css";
+@import "/styles/selector-content/selector-content.css";
 html, body {
   height: 100%;
   width: 100%;

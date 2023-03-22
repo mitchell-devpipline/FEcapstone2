@@ -17,4 +17,22 @@
   height: 90%;
   background-color: green;
   border: solid hotpink 3px;
+}
+.weight-wrapper .bottom-weight-wrapper .all-students {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+.weight-wrapper .bottom-weight-wrapper .all-students button {
+  background-color: hotpink;
+  margin: 0px 3px;
+}
+.weight-wrapper .bottom-weight-wrapper .all-students button:nth-child(2) {
+  background-color: lightgreen;
+  margin: 0px 3px;
+}
+.weight-wrapper .bottom-weight-wrapper .all-students button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=weight-content.css.map */

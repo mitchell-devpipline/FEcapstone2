@@ -19,5 +19,26 @@
     height: 90%;
     background-color: green;
     border: solid hotpink 3px;
+
+    .all-students {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100px;
+      width: 100px;
+      
+      button {
+        background-color: hotpink;
+        margin: 0px 3px;
+        
+        &:nth-child(2) {
+          background-color: lightgreen;
+          margin: 0px 3px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
