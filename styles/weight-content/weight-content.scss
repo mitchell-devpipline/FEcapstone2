@@ -19,10 +19,13 @@
     height: 90%;
     background-color: green;
     border: solid hotpink 3px;
+    overflow-y: scroll;
+
 
     .all-students {
       display: flex;
       flex-direction: column;
+      // justify-content: center;
       align-items: center;
       height: 100px;
       width: 100px;
@@ -32,8 +35,9 @@
         margin: 0px 3px;
         
         &:nth-child(2) {
-          background-color: lightgreen;
-          margin: 0px 3px;
+          background-color: rgb(41 255 0);
+          padding: 2px 7px;
+          margin: 0px 10px;
         }
         &:hover {
           cursor: pointer;

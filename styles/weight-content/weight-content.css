@@ -17,6 +17,7 @@
   height: 90%;
   background-color: green;
   border: solid hotpink 3px;
+  overflow-y: scroll;
 }
 .weight-wrapper .bottom-weight-wrapper .all-students {
   display: flex;
@@ -30,8 +31,9 @@
   margin: 0px 3px;
 }
 .weight-wrapper .bottom-weight-wrapper .all-students button:nth-child(2) {
-  background-color: lightgreen;
-  margin: 0px 3px;
+  background-color: rgb(41, 255, 0);
+  padding: 2px 7px;
+  margin: 0px 10px;
 }
 .weight-wrapper .bottom-weight-wrapper .all-students button:hover {
   cursor: pointer;

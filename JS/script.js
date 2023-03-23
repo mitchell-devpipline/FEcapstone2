@@ -1,19 +1,16 @@
-async function grabData() {
+function grabData() {
   try{
-    const responseData = await fetch("MOCK_DATA.json", {})
+    const responseData = fetch("MOCK_DATA.json", {})
     .then( res => res.json())
     return responseData
   } catch (error) {
     console.error(error);
   }
 }
-console.log(grabData())
 
 function capitalizeName(firstName, lastName) {
-  return firstName[0].toUppeerCase() + firstName.
-  slice(1)+ ` ` + lastName[0].toUppeerCase()
-
-} 
+  return firstName[0].toUpperCase() + firstName.slice(1)+ ` ` + lastName[0].toUpperCase()
+}
 
 function addToHTML(fullName) {
   const students = document.getElementsByClassName
@@ -40,5 +37,18 @@ function addToHTML(fullName) {
       students.appendChild(div)
 
 }
+// addToHTML(document.createTextNode(fullName))
   
-addToHTML(document.createTextNode("happy"))
+
+async function split() {
+  const data = await grabData()
+
+  data.forEach(students => {
+    const names = document.createTextNode(`${capitalizeName(students.first_name, students.last_name)}`)
+    console.log(names)
+    addToHTML(names)
+    // console.log(students)
+  })
+}
+
+split()
