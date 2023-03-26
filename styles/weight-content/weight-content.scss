@@ -26,11 +26,15 @@
     .users {
       display: flex;
       flex-direction: column;
-      // justify-content: center;
+      font-size: 10px;
       align-items: center;
       height: 100px;
       width: 100%;
       color: hotpink;
+
+      h1 {
+        font-size: 15px;
+      }
       
       button {
         background-color: hotpink;

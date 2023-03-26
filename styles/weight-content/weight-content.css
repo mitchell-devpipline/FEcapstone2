@@ -23,10 +23,14 @@
 .weight-wrapper .bottom-weight-wrapper .users {
   display: flex;
   flex-direction: column;
+  font-size: 10px;
   align-items: center;
   height: 100px;
   width: 100%;
   color: hotpink;
+}
+.weight-wrapper .bottom-weight-wrapper .users h1 {
+  font-size: 15px;
 }
 .weight-wrapper .bottom-weight-wrapper .users button {
   background-color: hotpink;
