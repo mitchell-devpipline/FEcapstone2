@@ -1,7 +1,6 @@
 .selector-content-wrapper {
   width: 85%;
   height: 100%;
-  border: solid white 1px;
   display: flex;
   justify-content: center;
   flex-direction:column;
@@ -9,7 +8,27 @@
 
   p {
     color: white;
-    font-size: 45px;      
+    font-size: 45px;  
+    
+  }
+
+  .pulsate {
+    color: white;
+    font-size: 45px;  
+    animation: pulse 3s ;
+
+    @keyframes pulse {
+      0% {
+        color: white;
+      }
+      50%{
+        opacity: 0;
+      }
+      100% {
+        color: whitesmoke;
+      }
+      
+    }
   }
 
   button {

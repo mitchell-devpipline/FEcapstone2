@@ -71,15 +71,20 @@ weightControl(weightCounter)
 
 async function namePicker() {
 const nameChanger = document.querySelector("p")
-nameChanger.innerHTML = "Loading..."
-const x = await random()
-nameChanger.innerHTML = x;
+nameChanger.innerHTML = ("Loading...")
+const pulse = nameChanger.classList.add("pulsate")
+const grab = await random()
+const removePulse = nameChanger.classList.remove("pulsate")
+
+
+nameChanger.innerHTML = grab;
 }
 
 
 async function random() {
   const data = await grabData()
 
+  await timer()
   const randIndex = Math.floor(Math.random() * data.length)
 
   const randomName = data[randIndex]
@@ -92,6 +97,11 @@ async function random() {
 }
 random()
 
-function capitalizeName(firstName, lastName) {
-  return firstName[0].toUpperCase() + firstName.slice(1)+ ` ` + lastName[0].toUpperCase()
+function timer(ms=3000) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, ms);
+  });
 }
+
