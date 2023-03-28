@@ -45,11 +45,9 @@ function addToHTML(fullName, weightCounter) {
   addButton.addEventListener("click" , e => {
     handleWeight(e, 1)
   })
-  
   minusButton.addEventListener("click" , e => {
     handleWeight(e, -1)
   })
-  
 }
 
 function handleWeight(e, amt) {
@@ -57,8 +55,6 @@ function handleWeight(e, amt) {
 
   weightEl.innerText = Number(weightEl.innerText) + amt
 }
-
-
 
 async function weightControl(weightCounter) {
   const data = await grabData()
@@ -68,12 +64,34 @@ async function weightControl(weightCounter) {
     const updateWeight = weightCounter
 
     addToHTML(names, updateWeight)
-  })
+  
+  }) 
 }
-
 weightControl(weightCounter)
 
+async function namePicker() {
+const nameChanger = document.querySelector("p")
+nameChanger.innerHTML = "Loading..."
+const x = await random()
+nameChanger.innerHTML = x;
+}
 
-// nameChanger = document.querySelector("p").innerHTML = "hi"
-// This will update the spot for adding in a name
 
+async function random() {
+  const data = await grabData()
+
+  const randIndex = Math.floor(Math.random() * data.length)
+
+  const randomName = data[randIndex]
+
+  const displayRandomName = (`${capitalizeName(randomName.first_name, randomName.last_name)}`)
+  
+  console.log(displayRandomName)
+  return displayRandomName
+
+}
+random()
+
+function capitalizeName(firstName, lastName) {
+  return firstName[0].toUpperCase() + firstName.slice(1)+ ` ` + lastName[0].toUpperCase()
+}
